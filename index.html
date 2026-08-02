@@ -93,32 +93,12 @@
     margin: 0;
   }
 
-  .signature { width: 100%; max-width: 240px; height: 46px; margin: 0.85rem 0 0.2rem; display: block; }
-  .signature .axis { stroke: var(--line); stroke-width: 1; }
-  .signature .series {
-    fill: none;
-    stroke: var(--accent-line);
-    stroke-width: 2.2;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke-dasharray: 520;
-    stroke-dashoffset: 520;
-    animation: draw 1.7s cubic-bezier(.22,.61,.36,1) 0.25s forwards;
-  }
-  .signature .dot {
-    fill: var(--accent-line);
-    opacity: 0;
-    animation: pop 0.5s ease 1.75s forwards;
-  }
-  @keyframes draw { to { stroke-dashoffset: 0; } }
-  @keyframes pop  { to { opacity: 1; } }
-
   .brand-role {
     font-family: var(--mono);
     font-size: 0.76rem;
     letter-spacing: 0.02em;
     color: var(--muted);
-    margin: 0.4rem 0 0;
+    margin: 1.1rem 0 0;
     line-height: 1.5;
   }
   .brand-role strong { color: var(--ink); font-weight: 500; }
@@ -284,7 +264,6 @@
   @media (max-width: 860px) {
     .layout { grid-template-columns: 1fr; gap: 2.75rem; }
     .sidebar { position: static; }
-    .signature { max-width: 260px; }
     .nav {
       flex-direction: row;
       flex-wrap: wrap;
@@ -306,8 +285,6 @@
 
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
-    .signature .series { animation: none; stroke-dashoffset: 0; }
-    .signature .dot { animation: none; opacity: 1; }
   }
 </style>
 </head>
@@ -319,12 +296,6 @@
     <img class="portrait" src="photo_me.jpg" width="132" height="132"
          alt="Martin Časta" />
     <h1 class="brand-name">Martin<br>Časta</h1>
-
-    <svg class="signature" viewBox="0 0 240 46" role="img" aria-label="Time-series signature line">
-      <line class="axis" x1="0" y1="40" x2="240" y2="40" />
-      <path class="series" d="M2,34 L34,29 L52,33 L74,20 L98,25 L120,12 L146,17 L170,7 L200,11 L232,4" />
-      <circle class="dot" cx="232" cy="4" r="3.2" />
-    </svg>
 
     <p class="brand-role">
       <strong>Economist</strong>, Czech National Bank<br>
@@ -366,51 +337,51 @@
       <p class="group-label">Published articles</p>
 
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1ubXTDRfXbhm_B-Ugui1fTToq04RV7APX/view?usp=sharing" target="_blank" rel="noopener">Interest Rates and Exchange Rates: Crisis-Driven Dynamics</a></h3>
+        <h3 class="entry-title"><a href="papers/interest-rates-exchange-rates.pdf" target="_blank" rel="noopener">Interest Rates and Exchange Rates: Crisis-Driven Dynamics</a></h3>
         <div class="entry-year">2026</div>
-        <p class="entry-meta"><span class="venue">Economics Letters</span> <span class="sep">·</span> <a href="https://drive.google.com/file/d/1ubXTDRfXbhm_B-Ugui1fTToq04RV7APX/view?usp=sharing" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S0165176526002235" target="_blank" rel="noopener">Journal</a></p>
+        <p class="entry-meta"><span class="venue">Economics Letters</span> <span class="sep">·</span> <a href="papers/interest-rates-exchange-rates.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S0165176526002235" target="_blank" rel="noopener">Journal</a></p>
       </article>
 
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1GGgwFmqzxKzzn7AP530DOuvHHsPz8fxl/view?usp=sharing" target="_blank" rel="noopener">The Impact of Mortgage Rates on the Housing Market</a></h3>
+        <h3 class="entry-title"><a href="papers/mortgage-rates-housing.pdf" target="_blank" rel="noopener">The Impact of Mortgage Rates on the Housing Market</a></h3>
         <div class="entry-year">2025</div>
-        <p class="entry-meta"><span class="venue">Journal of Housing Economics</span> <span class="sep">·</span> <a href="https://drive.google.com/file/d/1GGgwFmqzxKzzn7AP530DOuvHHsPz8fxl/view?usp=sharing" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/abs/pii/S1051137725000385" target="_blank" rel="noopener">Journal</a></p>
+        <p class="entry-meta"><span class="venue">Journal of Housing Economics</span> <span class="sep">·</span> <a href="papers/mortgage-rates-housing.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/abs/pii/S1051137725000385" target="_blank" rel="noopener">Journal</a></p>
       </article>
 
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1Oy-Y_HqLopqWAXByMjWMdi0g4LbCBR5l/view?usp=sharing" target="_blank" rel="noopener">The Impact of Monetary Policy on Wealth Inequality</a></h3>
+        <h3 class="entry-title"><a href="papers/monetary-policy-wealth-inequality.pdf" target="_blank" rel="noopener">The Impact of Monetary Policy on Wealth Inequality</a></h3>
         <div class="entry-year">2025</div>
-        <p class="entry-meta"><span class="venue">Finance Research Letters</span> <span class="sep">·</span> <a href="https://drive.google.com/file/d/1Oy-Y_HqLopqWAXByMjWMdi0g4LbCBR5l/view?usp=sharing" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S1544612325006348" target="_blank" rel="noopener">Journal</a></p>
+        <p class="entry-meta"><span class="venue">Finance Research Letters</span> <span class="sep">·</span> <a href="papers/monetary-policy-wealth-inequality.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S1544612325006348" target="_blank" rel="noopener">Journal</a></p>
       </article>
 
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/14YfF8N_5e4FYvFyi3vhF6x9fxnRiBvgP/view?usp=sharing" target="_blank" rel="noopener">Recovery Theorem and the Risk Aversion: Evidence from the Czech Republic</a></h3>
+        <h3 class="entry-title"><a href="papers/recovery-theorem-risk-aversion.pdf" target="_blank" rel="noopener">Recovery Theorem and the Risk Aversion: Evidence from the Czech Republic</a></h3>
         <div class="entry-year">2025</div>
-        <p class="entry-meta"><span class="venue">International Journal of Monetary Economics and Finance</span> <span class="sep">·</span> <a href="https://drive.google.com/file/d/14YfF8N_5e4FYvFyi3vhF6x9fxnRiBvgP/view?usp=sharing" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.inderscienceonline.com/doi/abs/10.1504/IJMEF.2024.144126" target="_blank" rel="noopener">Journal</a></p>
+        <p class="entry-meta"><span class="venue">International Journal of Monetary Economics and Finance</span> <span class="sep">·</span> <a href="papers/recovery-theorem-risk-aversion.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.inderscienceonline.com/doi/abs/10.1504/IJMEF.2024.144126" target="_blank" rel="noopener">Journal</a></p>
       </article>
 
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1WpZ-baSyuuH4bsmGuSF9ffmbSN3VqUxF/view?usp=sharing" target="_blank" rel="noopener">Forecasting Nominal Exchange Rates Using a Dynamic Model Averaging Framework</a></h3>
+        <h3 class="entry-title"><a href="papers/forecasting-exchange-rates-dma.pdf" target="_blank" rel="noopener">Forecasting Nominal Exchange Rates Using a Dynamic Model Averaging Framework</a></h3>
         <div class="entry-year">2024</div>
-        <p class="entry-meta"><span class="venue">Heliyon</span> <span class="sep">·</span> <a href="https://drive.google.com/file/d/1WpZ-baSyuuH4bsmGuSF9ffmbSN3VqUxF/view?usp=sharing" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S2405844024151432" target="_blank" rel="noopener">Journal</a></p>
+        <p class="entry-meta"><span class="venue">Heliyon</span> <span class="sep">·</span> <a href="papers/forecasting-exchange-rates-dma.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S2405844024151432" target="_blank" rel="noopener">Journal</a></p>
       </article>
 
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1QFCzNJGhZoUvFoKTwflwVism-UkytluI/view?usp=sharing" target="_blank" rel="noopener">Inflation, Interest Rates and the Predictability of Stock Returns</a></h3>
+        <h3 class="entry-title"><a href="papers/inflation-rates-stock-returns.pdf" target="_blank" rel="noopener">Inflation, Interest Rates and the Predictability of Stock Returns</a></h3>
         <div class="entry-year">2023</div>
-        <p class="entry-meta"><span class="venue">Finance Research Letters</span> <span class="sep">·</span> <a href="https://drive.google.com/file/d/1QFCzNJGhZoUvFoKTwflwVism-UkytluI/view?usp=sharing" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S1544612323007523" target="_blank" rel="noopener">Journal</a></p>
+        <p class="entry-meta"><span class="venue">Finance Research Letters</span> <span class="sep">·</span> <a href="papers/inflation-rates-stock-returns.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S1544612323007523" target="_blank" rel="noopener">Journal</a></p>
       </article>
 
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1MzR0UnFyQE8g32xOXchjYwpAuHsBK77h/view?usp=sharing" target="_blank" rel="noopener">Deriving Equity Risk Premium Using Dividend Futures</a></h3>
+        <h3 class="entry-title"><a href="papers/equity-risk-premium-dividend-futures.pdf" target="_blank" rel="noopener">Deriving Equity Risk Premium Using Dividend Futures</a></h3>
         <div class="entry-year">2022</div>
-        <p class="entry-meta"><span class="venue">The North American Journal of Economics and Finance</span> <span class="sep">·</span> <a href="https://drive.google.com/file/d/1MzR0UnFyQE8g32xOXchjYwpAuHsBK77h/view?usp=sharing" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S1062940822000237" target="_blank" rel="noopener">Journal</a></p>
+        <p class="entry-meta"><span class="venue">The North American Journal of Economics and Finance</span> <span class="sep">·</span> <a href="papers/equity-risk-premium-dividend-futures.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S1062940822000237" target="_blank" rel="noopener">Journal</a></p>
       </article>
 
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1YpviTWYEqjsV_2UnqtQiBDMBci96Kto5/view?usp=sharing" target="_blank" rel="noopener">Supply Shocks, Demand Shocks and Yield Curve Dynamics</a></h3>
+        <h3 class="entry-title"><a href="papers/supply-demand-yield-curve.pdf" target="_blank" rel="noopener">Supply Shocks, Demand Shocks and Yield Curve Dynamics</a></h3>
         <div class="entry-year">2022</div>
-        <p class="entry-meta"><span class="venue">Finance Research Letters</span> <span class="sep">·</span> <a href="https://drive.google.com/file/d/1YpviTWYEqjsV_2UnqtQiBDMBci96Kto5/view?usp=sharing" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S1544612322004548" target="_blank" rel="noopener">Journal</a></p>
+        <p class="entry-meta"><span class="venue">Finance Research Letters</span> <span class="sep">·</span> <a href="papers/supply-demand-yield-curve.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S1544612322004548" target="_blank" rel="noopener">Journal</a></p>
       </article>
 
       <article class="entry">
@@ -428,15 +399,15 @@
       </article>
 
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1PD2aDDxmkyrNKm0E5yIvYcRFwh1FhKbI/view?usp=sharing" target="_blank" rel="noopener">Identifying Supply and Demand Shocks Using Dynamic Principal Component Analysis</a></h3>
+        <h3 class="entry-title"><a href="papers/supply-demand-dpca.pdf" target="_blank" rel="noopener">Identifying Supply and Demand Shocks Using Dynamic Principal Component Analysis</a></h3>
         <div class="entry-year">draft</div>
-        <p class="entry-meta"><a href="https://drive.google.com/file/d/1PD2aDDxmkyrNKm0E5yIvYcRFwh1FhKbI/view?usp=sharing" target="_blank" rel="noopener">PDF</a></p>
+        <p class="entry-meta"><a href="papers/supply-demand-dpca.pdf" target="_blank" rel="noopener">PDF</a></p>
       </article>
 
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1sa6rCOtSaC3u0b-iaawHVXmCWwxETWd4/view?usp=sharing" target="_blank" rel="noopener">Common Trend VAR with I(1) and I(2) Series</a></h3>
+        <h3 class="entry-title"><a href="papers/common-trend-var.pdf" target="_blank" rel="noopener">Common Trend VAR with I(1) and I(2) Series</a></h3>
         <div class="entry-year">draft</div>
-        <p class="entry-meta"><a href="https://drive.google.com/file/d/1sa6rCOtSaC3u0b-iaawHVXmCWwxETWd4/view?usp=sharing" target="_blank" rel="noopener">PDF</a></p>
+        <p class="entry-meta"><a href="papers/common-trend-var.pdf" target="_blank" rel="noopener">PDF</a></p>
       </article>
 
       <article class="entry">
@@ -448,9 +419,9 @@
       <p class="group-label">Other</p>
 
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1sOhIwki5P6rM5ee3LMUP2bybZl8ZXDlG/view?usp=sharing" target="_blank" rel="noopener">Five Essays on Asset Pricing</a></h3>
+        <h3 class="entry-title"><a href="papers/five-essays-asset-pricing.pdf" target="_blank" rel="noopener">Five Essays on Asset Pricing</a></h3>
         <div class="entry-year">thesis</div>
-        <p class="entry-meta">Doctoral dissertation <span class="sep">·</span> <a href="https://drive.google.com/file/d/1sOhIwki5P6rM5ee3LMUP2bybZl8ZXDlG/view?usp=sharing" target="_blank" rel="noopener">PDF</a></p>
+        <p class="entry-meta">Doctoral dissertation <span class="sep">·</span> <a href="papers/five-essays-asset-pricing.pdf" target="_blank" rel="noopener">PDF</a></p>
       </article>
 
       <article class="entry">
@@ -502,48 +473,48 @@
       <p class="group-label">Current Issues in Applied International Economics</p>
 
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1cfTtn5Po_kJKZWsgB0wJZARFT6FbMgtH/view" target="_blank" rel="noopener">Neoclassical Approach in International Trade</a></h3>
+        <h3 class="entry-title"><a href="slides/neoclassical-trade.pdf" target="_blank" rel="noopener">Neoclassical Approach in International Trade</a></h3>
         <div class="entry-year">slides</div>
       </article>
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1WWrF0OsJ3AXFKCtfgtxSc0PRPU6bya2N/view" target="_blank" rel="noopener">New Trade Theory in International Trade</a></h3>
+        <h3 class="entry-title"><a href="slides/new-trade-theory.pdf" target="_blank" rel="noopener">New Trade Theory in International Trade</a></h3>
         <div class="entry-year">slides</div>
       </article>
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1PssvqTI_dQhLOK14_Nviia73GowY0tNM/view?usp=sharing" target="_blank" rel="noopener">Intertemporal Approach</a></h3>
+        <h3 class="entry-title"><a href="slides/intertemporal-approach.pdf" target="_blank" rel="noopener">Intertemporal Approach</a></h3>
         <div class="entry-year">slides</div>
       </article>
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/17kk33IQ-H_7m0TfDDl9ila_vsDl3M3GQ/view?usp=sharing" target="_blank" rel="noopener">Forex</a></h3>
+        <h3 class="entry-title"><a href="slides/forex.pdf" target="_blank" rel="noopener">Forex</a></h3>
         <div class="entry-year">slides</div>
       </article>
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1hFQvUOBBHXeGAVqnQdg6UGIjYFvlgt95/view?usp=sharing" target="_blank" rel="noopener">Reserve Currencies</a></h3>
+        <h3 class="entry-title"><a href="slides/reserve-currencies.pdf" target="_blank" rel="noopener">Reserve Currencies</a></h3>
         <div class="entry-year">slides</div>
       </article>
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1q-MryrWxrVTTxEIKVywvSLHXrlobS5ua/view?usp=sharing" target="_blank" rel="noopener">Fundamental Theories Explaining Exchange Rates in International Finance</a></h3>
+        <h3 class="entry-title"><a href="slides/fundamental-fx-theories.pdf" target="_blank" rel="noopener">Fundamental Theories Explaining Exchange Rates in International Finance</a></h3>
         <div class="entry-year">slides</div>
       </article>
 
       <p class="group-label">Financial Stability</p>
 
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1xmrZINj81gnORgmqtnkf_I8gPHKo3vPl/view?usp=sharing" target="_blank" rel="noopener">Foreign Exchange Market and Microstructural Approach to Exchange Rate Dynamics</a></h3>
+        <h3 class="entry-title"><a href="slides/fx-market-microstructure.pdf" target="_blank" rel="noopener">Foreign Exchange Market and Microstructural Approach to Exchange Rate Dynamics</a></h3>
         <div class="entry-year">slides</div>
       </article>
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1Gju9GpAV_1AwrNksAK-jgPW8rVDCUK_0/view?usp=sharing" target="_blank" rel="noopener">Financial System Integration and Shock Transmission</a></h3>
+        <h3 class="entry-title"><a href="slides/financial-system-integration.pdf" target="_blank" rel="noopener">Financial System Integration and Shock Transmission</a></h3>
         <div class="entry-year">slides</div>
       </article>
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1B2CyYSIa64LdaAU_Jgu6t04yTUbEJN0-/view?usp=sharing" target="_blank" rel="noopener">International Capital Flows in the Context of Financial Stability</a></h3>
+        <h3 class="entry-title"><a href="slides/international-capital-flows.pdf" target="_blank" rel="noopener">International Capital Flows in the Context of Financial Stability</a></h3>
         <div class="entry-year">slides</div>
       </article>
       <article class="entry">
-        <h3 class="entry-title"><a href="https://drive.google.com/file/d/1EV7TmJm3dfu4KbZUiB_WbZ5f3k-Jk9sQ/view?usp=sharing" target="_blank" rel="noopener">Sustainability of the Net International Investment Position</a></h3>
+        <h3 class="entry-title"><a href="slides/niip-sustainability.pdf" target="_blank" rel="noopener">Sustainability of the Net International Investment Position</a></h3>
         <div class="entry-year">slides</div>
-        <p class="entry-meta"><a href="https://drive.google.com/file/d/1uvNzMQnoxN7MtMhsKdfAsgNu8KAs7H3c/view?usp=sharing" target="_blank" rel="noopener">Czech version</a></p>
+        <p class="entry-meta"><a href="slides/niip-sustainability-cz.pdf" target="_blank" rel="noopener">Czech version</a></p>
       </article>
     </section>
 
