@@ -3,13 +3,13 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Martin Časta</title>
-<meta name="description" content="Martin Časta — Economist at the Czech National Bank and Assistant Professor at the Prague University of Economics and Business. Research on asset pricing, macro-finance, and financial stability." />
-<meta name="author" content="Martin Časta" />
+<title>Martin Casta</title>
+<meta name="description" content="Martin Casta — Economist at the Czech National Bank and Assistant Professor at the Prague University of Economics and Business. Research on asset pricing, macro-finance, and financial stability." />
+<meta name="author" content="Martin Casta" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Martin Časta" />
+<meta property="og:title" content="Martin Casta" />
 <meta property="og:description" content="Economist at the Czech National Bank. Research on asset pricing, heterogeneous-agent macroeconomics, and financial markets." />
 <meta property="og:url" content="https://sites.google.com/view/martincasta" />
 
@@ -74,13 +74,14 @@
   .sidebar { position: sticky; top: 3rem; }
 
   .portrait {
-    width: 132px;
-    height: 132px;
+    width: 100%;
+    max-width: 300px;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 10px;
     border: 1px solid var(--line);
     display: block;
-    margin: 0 0 1.25rem;
+    margin: 0 0 1.5rem;
     filter: saturate(0.96);
   }
 
@@ -264,6 +265,7 @@
   @media (max-width: 860px) {
     .layout { grid-template-columns: 1fr; gap: 2.75rem; }
     .sidebar { position: static; }
+    .portrait { max-width: 200px; }
     .nav {
       flex-direction: row;
       flex-wrap: wrap;
@@ -293,9 +295,9 @@
 
   <!-- ============ SIDEBAR ============ -->
   <aside class="sidebar">
-    <img class="portrait" src="photo_me.jpg" width="132" height="132"
-         alt="Martin Časta" />
-    <h1 class="brand-name">Martin<br>Časta</h1>
+    <img class="portrait" src="photo_me.jpg" width="300" height="300"
+         alt="Martin Casta" />
+    <h1 class="brand-name">Martin<br>Casta</h1>
 
     <p class="brand-role">
       <strong>Economist</strong>, Czech National Bank<br>
@@ -521,7 +523,7 @@
   </main>
 
   <footer>
-    <span>© <span id="year"></span> Martin Časta</span>
+    <span>© <span id="year"></span> Martin Casta</span>
     <span>Prague · Czech National Bank · VŠE</span>
   </footer>
 
