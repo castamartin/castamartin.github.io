@@ -7,7 +7,6 @@
 <meta name="description" content="Martin Casta (Časta) — Economist at the Czech National Bank and Assistant Professor at the Prague University of Economics and Business (VŠE). Research on asset pricing, macro-finance, and financial stability." />
 <meta name="author" content="Martin Casta" />
 <link rel="canonical" href="https://castamartin.github.io/" />
-
 <!-- Open Graph / social -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Martin Casta — Economist, Czech National Bank" />
@@ -15,7 +14,6 @@
 <meta property="og:url" content="https://castamartin.github.io/" />
 <meta property="og:image" content="https://castamartin.github.io/photo_me.jpg" />
 <meta name="twitter:card" content="summary" />
-
 <!-- Structured data: helps search engines connect this page to your profiles -->
 <script type="application/ld+json">
 {
@@ -38,14 +36,11 @@
   ]
 }
 </script>
-
 <!-- Favicon: the signature series line -->
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2317263A'/%3E%3Cpath d='M4 22 L11 16 L15 19 L21 9 L28 12' fill='none' stroke='%232FA5A8' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
-
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
 <style>
   :root {
     --paper:   #FBFAF7;
@@ -56,16 +51,12 @@
     --accent:  #0E6E72;
     --accent-deep: #0A5457;
     --accent-line: #2FA5A8;
-
     --serif: "Spectral", Georgia, "Times New Roman", serif;
     --sans:  "IBM Plex Sans", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     --mono:  "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   }
-
   * { box-sizing: border-box; }
-
   html { scroll-behavior: smooth; scroll-padding-top: 2rem; }
-
   body {
     margin: 0;
     background: var(--paper);
@@ -76,7 +67,6 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
-
   a { color: var(--accent); text-decoration: none; }
   a:hover { color: var(--accent-deep); text-decoration: underline; text-underline-offset: 2px; }
   a:focus-visible {
@@ -84,7 +74,6 @@
     outline-offset: 2px;
     border-radius: 2px;
   }
-
   /* ---------- Layout ---------- */
   .layout {
     max-width: 1120px;
@@ -95,10 +84,8 @@
     gap: clamp(2.5rem, 6vw, 5.5rem);
     align-items: start;
   }
-
   /* ---------- Sidebar ---------- */
   .sidebar { position: sticky; top: 3rem; }
-
   .portrait {
     width: 100%;
     max-width: 300px;
@@ -110,7 +97,6 @@
     margin: 0 0 1.5rem;
     filter: saturate(0.96);
   }
-
   .brand-name {
     font-family: var(--serif);
     font-weight: 500;
@@ -119,7 +105,6 @@
     letter-spacing: -0.015em;
     margin: 0;
   }
-
   .brand-role {
     font-family: var(--mono);
     font-size: 0.76rem;
@@ -129,7 +114,6 @@
     line-height: 1.5;
   }
   .brand-role strong { color: var(--ink); font-weight: 500; }
-
   .nav {
     margin-top: 2.1rem;
     padding-top: 1.5rem;
@@ -145,13 +129,12 @@
     color: var(--muted);
     padding: 0.28rem 0 0.28rem 1.1rem;
     border-left: 2px solid transparent;
-    transition: color .18s ease, border-color .18s ease;
+    transition: color .18s ease, border-color .18s ease, background .18s ease;
   }
   .nav a:hover { color: var(--ink); text-decoration: none; }
   .nav a.active { color: var(--accent); border-left-color: var(--accent); }
   .nav .num { color: var(--line); margin-right: 0.55rem; }
   .nav a.active .num { color: var(--accent-line); }
-
   .ext {
     margin-top: 1.75rem;
     padding-top: 1.5rem;
@@ -169,13 +152,10 @@
     gap: 0.35rem;
   }
   .ext a::before { content: "↗"; color: var(--muted); font-size: 0.72em; }
-
   /* ---------- Main ---------- */
   .main { min-width: 0; max-width: 680px; }
-
   section { scroll-margin-top: 2rem; }
   section + section { margin-top: clamp(3.5rem, 7vw, 5rem); }
-
   .kicker {
     font-family: var(--mono);
     font-size: 0.72rem;
@@ -193,7 +173,6 @@
     height: 1px;
     background: var(--line);
   }
-
   .section-title {
     font-family: var(--serif);
     font-weight: 500;
@@ -202,7 +181,6 @@
     letter-spacing: -0.01em;
     margin: 0 0 1.4rem;
   }
-
   .lede {
     font-family: var(--serif);
     font-size: 1.16rem;
@@ -211,7 +189,6 @@
   }
   .lede p { margin: 0 0 1rem; }
   .lede p:last-child { margin-bottom: 0; }
-
   /* group sub-heads within a section (Published / Work in progress / …) */
   .group-label {
     font-family: var(--mono);
@@ -222,7 +199,6 @@
     margin: 2.4rem 0 0.3rem;
   }
   .group-label:first-of-type { margin-top: 0.4rem; }
-
   /* ---------- Ledger entries ---------- */
   .entry {
     display: grid;
@@ -272,7 +248,6 @@
     border-radius: 3px;
     white-space: nowrap;
   }
-
   footer {
     grid-column: 1 / -1;
     margin-top: clamp(3.5rem, 8vw, 6rem);
@@ -286,31 +261,76 @@
     justify-content: space-between;
     gap: 0.75rem;
   }
-
   /* ---------- Responsive ---------- */
   @media (max-width: 860px) {
-    .layout { grid-template-columns: 1fr; gap: 2.75rem; }
-    .sidebar { position: static; }
-    .portrait { max-width: 200px; }
-    .nav {
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 0.35rem 0.4rem;
+    .layout {
+      grid-template-columns: 1fr;
+      gap: 2.75rem;
+      padding-top: 4.75rem;
     }
+    .sidebar {
+      position: static;
+      display: flex;
+      flex-direction: column;
+    }
+    .portrait { max-width: 180px; margin-bottom: 1.25rem; }
+    .brand-name { font-size: 2rem; }
+    /* Mobile nav: fixed top bar, always visible */
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+      margin: 0;
+      padding: 0.6rem clamp(1rem, 5vw, 3.5rem);
+      border-top: none;
+      border-bottom: 1px solid var(--line);
+      background: color-mix(in srgb, var(--paper) 92%, transparent);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 0.15rem;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none; /* Firefox */
+    }
+    .nav::-webkit-scrollbar { display: none; }
     .nav a {
+      flex: 0 0 auto;
       border-left: none;
       border-bottom: 2px solid transparent;
-      padding: 0.3rem 0.7rem 0.3rem 0;
+      padding: 0.55rem 0.9rem;
+      font-size: 0.8rem;
+      border-radius: 6px 6px 0 0;
+      white-space: nowrap;
     }
-    .nav a.active { border-left-color: transparent; border-bottom-color: var(--accent); }
+    .nav a:hover {
+      color: var(--ink);
+      background: var(--panel);
+      text-decoration: none;
+    }
+    .nav a.active {
+      color: var(--accent);
+      border-left-color: transparent;
+      border-bottom-color: var(--accent);
+      background: color-mix(in srgb, var(--accent) 8%, transparent);
+    }
+    .nav .num { margin-right: 0.4rem; }
+    .ext {
+      margin-top: 1.25rem;
+      padding-top: 1.1rem;
+    }
     .main { max-width: none; }
+    /* Extra top offset so the fixed nav never covers section titles on jump */
+    section { scroll-margin-top: 4.5rem; }
   }
-
   @media (max-width: 520px) {
+    .layout { padding-left: 1rem; padding-right: 1rem; }
     .entry { grid-template-columns: 1fr; }
     .entry-year { grid-row: 1; padding-top: 0; order: -1; color: var(--accent); }
   }
-
   @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
   }
@@ -318,25 +338,21 @@
 </head>
 <body>
 <div class="layout">
-
   <!-- ============ SIDEBAR ============ -->
   <aside class="sidebar">
     <img class="portrait" src="photo_me.jpg" width="300" height="300"
          alt="Martin Casta" />
     <h1 class="brand-name">Martin<br>Casta</h1>
-
     <p class="brand-role">
       <strong>Economist</strong>, Czech National Bank<br>
       <strong>Assistant Professor</strong>, VŠE Prague
     </p>
-
     <nav class="nav" aria-label="Sections">
       <a href="#about"><span class="num">00</span>About</a>
       <a href="#research"><span class="num">01</span>Research</a>
       <a href="#policy"><span class="num">02</span>Policy Work</a>
       <a href="#teaching"><span class="num">03</span>Teaching</a>
     </nav>
-
     <div class="ext">
       <a href="martin-casta-cv.pdf" target="_blank" rel="noopener">CV</a>
       <a href="https://scholar.google.com/citations?user=itGn2y8AAAAJ&hl=cs&oi=sra" target="_blank" rel="noopener">Scholar</a>
@@ -344,10 +360,8 @@
       <a href="mailto:casm00@vse.cz">Email</a>
     </div>
   </aside>
-
   <!-- ============ MAIN ============ -->
   <main class="main">
-
     <!-- ABOUT -->
     <section id="about">
       <p class="kicker">About</p>
@@ -357,150 +371,131 @@
         <p>This site provides access to my research, teaching materials, and other academic work. For further details, see my <a href="martin-casta-cv.pdf" target="_blank" rel="noopener">CV</a> and <a href="https://scholar.google.com/citations?user=itGn2y8AAAAJ&hl=cs&oi=sra" target="_blank" rel="noopener">Google Scholar</a> profile. For more light and informal writing, you can check out my <a href="https://martincasta.substack.com/" target="_blank" rel="noopener">Substack</a>.</p>
       </div>
     </section>
-
     <!-- RESEARCH -->
     <section id="research">
       <p class="kicker">01 — Research</p>
       <h2 class="section-title">Research</h2>
-
       <p class="group-label">Published articles</p>
-
       <article class="entry">
-        <h3 class="entry-title"><a href="papers/interest-rates-exchange-rates.pdf" target="_blank" rel="noopener">Interest Rates and Exchange Rates: Crisis-Driven Dynamics</a></h3>
+        <h3 class="entry-title"><a href="https://www.sciencedirect.com/science/article/pii/S0165176526002235" target="_blank" rel="noopener">Interest Rates and Exchange Rates: Crisis-Driven Dynamics</a></h3>
         <div class="entry-year">2026</div>
         <p class="entry-meta"><span class="venue">Economics Letters</span> <span class="sep">·</span> <a href="papers/interest-rates-exchange-rates.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S0165176526002235" target="_blank" rel="noopener">Journal</a></p>
       </article>
-
       <article class="entry">
-        <h3 class="entry-title"><a href="papers/mortgage-rates-housing.pdf" target="_blank" rel="noopener">The Impact of Mortgage Rates on the Housing Market</a></h3>
+        <h3 class="entry-title"><a href="https://www.sciencedirect.com/science/article/abs/pii/S1051137725000385" target="_blank" rel="noopener">The Impact of Mortgage Rates on the Housing Market</a></h3>
         <div class="entry-year">2025</div>
         <p class="entry-meta"><span class="venue">Journal of Housing Economics</span> <span class="sep">·</span> <a href="papers/mortgage-rates-housing.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/abs/pii/S1051137725000385" target="_blank" rel="noopener">Journal</a></p>
       </article>
-
       <article class="entry">
-        <h3 class="entry-title"><a href="papers/monetary-policy-wealth-inequality.pdf" target="_blank" rel="noopener">The Impact of Monetary Policy on Wealth Inequality</a></h3>
+        <h3 class="entry-title"><a href="https://www.sciencedirect.com/science/article/pii/S1544612325006348" target="_blank" rel="noopener">The Impact of Monetary Policy on Wealth Inequality</a></h3>
         <div class="entry-year">2025</div>
         <p class="entry-meta"><span class="venue">Finance Research Letters</span> <span class="sep">·</span> <a href="papers/monetary-policy-wealth-inequality.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S1544612325006348" target="_blank" rel="noopener">Journal</a></p>
       </article>
-
       <article class="entry">
-        <h3 class="entry-title"><a href="papers/recovery-theorem-risk-aversion.pdf" target="_blank" rel="noopener">Recovery Theorem and the Risk Aversion: Evidence from the Czech Republic</a></h3>
+        <h3 class="entry-title"><a href="https://www.inderscienceonline.com/doi/abs/10.1504/IJMEF.2024.144126" target="_blank" rel="noopener">Recovery Theorem and the Risk Aversion: Evidence from the Czech Republic</a></h3>
         <div class="entry-year">2025</div>
         <p class="entry-meta"><span class="venue">International Journal of Monetary Economics and Finance</span> <span class="sep">·</span> <a href="papers/recovery-theorem-risk-aversion.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.inderscienceonline.com/doi/abs/10.1504/IJMEF.2024.144126" target="_blank" rel="noopener">Journal</a></p>
       </article>
-
       <article class="entry">
-        <h3 class="entry-title"><a href="papers/forecasting-exchange-rates-dma.pdf" target="_blank" rel="noopener">Forecasting Nominal Exchange Rates Using a Dynamic Model Averaging Framework</a></h3>
+        <h3 class="entry-title"><a href="https://www.sciencedirect.com/science/article/pii/S2405844024151432" target="_blank" rel="noopener">Forecasting Nominal Exchange Rates Using a Dynamic Model Averaging Framework</a></h3>
         <div class="entry-year">2024</div>
         <p class="entry-meta"><span class="venue">Heliyon</span> <span class="sep">·</span> <a href="papers/forecasting-exchange-rates-dma.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S2405844024151432" target="_blank" rel="noopener">Journal</a></p>
       </article>
-
       <article class="entry">
-        <h3 class="entry-title"><a href="papers/inflation-rates-stock-returns.pdf" target="_blank" rel="noopener">Inflation, Interest Rates and the Predictability of Stock Returns</a></h3>
+        <h3 class="entry-title"><a href="https://www.sciencedirect.com/science/article/pii/S1544612323007523" target="_blank" rel="noopener">Inflation, Interest Rates and the Predictability of Stock Returns</a></h3>
         <div class="entry-year">2023</div>
         <p class="entry-meta"><span class="venue">Finance Research Letters</span> <span class="sep">·</span> <a href="papers/inflation-rates-stock-returns.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S1544612323007523" target="_blank" rel="noopener">Journal</a></p>
       </article>
-
       <article class="entry">
-        <h3 class="entry-title"><a href="papers/equity-risk-premium-dividend-futures.pdf" target="_blank" rel="noopener">Deriving Equity Risk Premium Using Dividend Futures</a></h3>
+        <h3 class="entry-title"><a href="https://www.sciencedirect.com/science/article/pii/S1062940822000237" target="_blank" rel="noopener">Deriving Equity Risk Premium Using Dividend Futures</a></h3>
         <div class="entry-year">2022</div>
         <p class="entry-meta"><span class="venue">The North American Journal of Economics and Finance</span> <span class="sep">·</span> <a href="papers/equity-risk-premium-dividend-futures.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S1062940822000237" target="_blank" rel="noopener">Journal</a></p>
       </article>
-
       <article class="entry">
-        <h3 class="entry-title"><a href="papers/supply-demand-yield-curve.pdf" target="_blank" rel="noopener">Supply Shocks, Demand Shocks and Yield Curve Dynamics</a></h3>
+        <h3 class="entry-title"><a href="https://www.sciencedirect.com/science/article/pii/S1544612322004548" target="_blank" rel="noopener">Supply Shocks, Demand Shocks and Yield Curve Dynamics</a></h3>
         <div class="entry-year">2022</div>
         <p class="entry-meta"><span class="venue">Finance Research Letters</span> <span class="sep">·</span> <a href="papers/supply-demand-yield-curve.pdf" target="_blank" rel="noopener">PDF</a> <span class="sep">·</span> <a href="https://www.sciencedirect.com/science/article/pii/S1544612322004548" target="_blank" rel="noopener">Journal</a></p>
       </article>
-
       <article class="entry">
-        <h3 class="entry-title">On the Macrofinancial Determinants of Life and Non-Life Insurance Premiums</h3>
+        <h3 class="entry-title"><a href="https://link.springer.com/article/10.1057/s41288-021-00249-z" target="_blank" rel="noopener">On the Macrofinancial Determinants of Life and Non-Life Insurance Premiums</a></h3>
         <div class="entry-year">2021</div>
         <p class="entry-meta"><span class="venue">The Geneva Papers on Risk and Insurance — Issues and Practice</span> <span class="sep">·</span> <a href="https://www.cnb.cz/cs/ekonomicky-vyzkum/publikace-vyzkumu/cnb-working-paper-series/On-the-Determinants-of-Life-and-Non-Life-Insurance-Premiums/" target="_blank" rel="noopener">WP</a> <span class="sep">·</span> <a href="https://link.springer.com/article/10.1057/s41288-021-00249-z" target="_blank" rel="noopener">Journal</a></p>
       </article>
-
       <p class="group-label">Work in progress</p>
-
       <article class="entry">
-        <h3 class="entry-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5504358" target="_blank" rel="noopener">Shifting Endpoints and the Information Effect of Monetary Policy</a></h3>
+        <h3 class="entry-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6983276" target="_blank" rel="noopener">The Volatility Channel of the Deposit Franchise</a></h3>
         <div class="entry-year"><span class="status">under review</span></div>
-        <p class="entry-meta">Under review at <span class="venue">Journal of Monetary Economics</span> <span class="sep">·</span> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5504358" target="_blank" rel="noopener">SSRN</a></p>
+        <p class="entry-meta">Under review at <span class="venue">Journal of Financial Intermediation</span> <span class="sep">·</span> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6983276" target="_blank" rel="noopener">SSRN</a></p>
       </article>
-
+      <article class="entry">
+        <h3 class="entry-title"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6691891" target="_blank" rel="noopener">Shifting Endpoints and the Information Effect of Monetary Policy</a></h3>
+        <div class="entry-year"><span class="status">under review</span></div>
+        <p class="entry-meta"><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6691891" target="_blank" rel="noopener">SSRN</a></p>
+      </article>
       <article class="entry">
         <h3 class="entry-title"><a href="papers/supply-demand-dpca.pdf" target="_blank" rel="noopener">Identifying Supply and Demand Shocks Using Dynamic Principal Component Analysis</a></h3>
         <div class="entry-year">draft</div>
         <p class="entry-meta"><a href="papers/supply-demand-dpca.pdf" target="_blank" rel="noopener">PDF</a></p>
       </article>
-
       <article class="entry">
         <h3 class="entry-title"><a href="papers/common-trend-var.pdf" target="_blank" rel="noopener">Common Trend VAR with I(1) and I(2) Series</a></h3>
         <div class="entry-year">draft</div>
         <p class="entry-meta"><a href="papers/common-trend-var.pdf" target="_blank" rel="noopener">PDF</a></p>
       </article>
-
       <article class="entry">
         <h3 class="entry-title">Monetary Policy Shocks and Bank Profitability: Evidence from the Euro Area</h3>
         <div class="entry-year">draft</div>
         <p class="entry-meta"><span class="authors">with Josef Švéda</span></p>
       </article>
-
       <p class="group-label">Other</p>
-
       <article class="entry">
         <h3 class="entry-title"><a href="papers/five-essays-asset-pricing.pdf" target="_blank" rel="noopener">Five Essays on Asset Pricing</a></h3>
         <div class="entry-year">thesis</div>
         <p class="entry-meta">Doctoral dissertation <span class="sep">·</span> <a href="papers/five-essays-asset-pricing.pdf" target="_blank" rel="noopener">PDF</a></p>
       </article>
-
       <article class="entry">
         <h3 class="entry-title"><a href="https://www.cnb.cz/export/sites/cnb/en/economic-research/.galleries/research_publications/cnb_wp/cnbwp_2022_07.pdf" target="_blank" rel="noopener">How Credit Improves the Exchange Rate Forecast</a></h3>
         <div class="entry-year">2022</div>
         <p class="entry-meta">CNB Working Paper <span class="sep">·</span> <a href="https://www.cnb.cz/export/sites/cnb/en/economic-research/.galleries/research_publications/cnb_wp/cnbwp_2022_07.pdf" target="_blank" rel="noopener">PDF</a></p>
       </article>
     </section>
-
     <!-- POLICY WORK -->
     <section id="policy">
       <p class="kicker">02 — Policy Work</p>
       <h2 class="section-title">Policy Work</h2>
-
       <p class="group-label">Thematic articles on financial stability</p>
-
       <article class="entry">
         <h3 class="entry-title"><a href="https://www.cnb.cz/en/financial-stability/thematic-articles-on-financial-stability/Reverse-stress-testing-of-the-banking-sector/" target="_blank" rel="noopener">Reverse Stress Testing of the Banking Sector</a></h3>
         <div class="entry-year">2025</div>
         <p class="entry-meta"><span class="authors">with Miroslav Plašil</span> <span class="sep">·</span> Czech National Bank</p>
       </article>
-
       <article class="entry">
         <h3 class="entry-title"><a href="https://www.cnb.cz/en/financial-stability/thematic-articles-on-financial-stability/Vulnerable-growth-Bayesian-GDP-at-Risk/" target="_blank" rel="noopener">Vulnerable Growth: Bayesian GDP-at-Risk</a></h3>
         <div class="entry-year">2020</div>
         <p class="entry-meta"><span class="authors">with M. Szabo and Z. Komárková</span> <span class="sep">·</span> Czech National Bank</p>
       </article>
-
       <p class="group-label">Other</p>
-
       <article class="entry">
         <h3 class="entry-title"><a href="https://www.cnb.cz/en/about_cnb/cnblog/The-growth-of-NBFI-and-households-financial-assets-trends-and-risks/" target="_blank" rel="noopener">The Growth of NBFI and Households' Financial Assets: Trends and Risks</a></h3>
         <div class="entry-year">blog</div>
-        <p class="entry-meta">CNBlog post</p>
+        <p class="entry-meta">CNBlog post <span class="sep">·</span> <span class="authors">with Manas</span></p>
       </article>
-
+      <article class="entry">
+        <h3 class="entry-title"><a href="https://www.cnb.cz/cs/o_cnb/cnblog/Za-hranicemi-verejnych-trhu-soukromy-kapital-a-jeho-rizika/" target="_blank" rel="noopener">Za hranicemi veřejných trhů: soukromý kapitál a jeho rizika</a></h3>
+        <div class="entry-year">blog</div>
+        <p class="entry-meta">CNBlog post, in Czech <span class="sep">·</span> <span class="authors">with Manas</span></p>
+      </article>
       <article class="entry">
         <h3 class="entry-title"><a href="https://www.cnb.cz/cs/o_cnb/cnblog/Vse-co-jste-kdy-chteli-vedet-o-investicnich-fondech-a-bali-jste-se-zeptat/" target="_blank" rel="noopener">Vše, co jste kdy chtěli vědět o investičních fondech (a báli jste se zeptat)</a></h3>
         <div class="entry-year">blog</div>
         <p class="entry-meta">CNBlog post, in Czech <span class="sep">·</span> <span class="authors">with Siuda, Holub</span></p>
       </article>
     </section>
-
     <!-- TEACHING -->
     <section id="teaching">
       <p class="kicker">03 — Teaching</p>
       <h2 class="section-title">Teaching</h2>
-
       <p class="group-label">Current Issues in Applied International Economics</p>
-
       <article class="entry">
         <h3 class="entry-title"><a href="slides/neoclassical-trade.pdf" target="_blank" rel="noopener">Neoclassical Approach in International Trade</a></h3>
         <div class="entry-year">slides</div>
@@ -525,9 +520,7 @@
         <h3 class="entry-title"><a href="slides/fundamental-fx-theories.pdf" target="_blank" rel="noopener">Fundamental Theories Explaining Exchange Rates in International Finance</a></h3>
         <div class="entry-year">slides</div>
       </article>
-
       <p class="group-label">Financial Stability</p>
-
       <article class="entry">
         <h3 class="entry-title"><a href="slides/fx-market-microstructure.pdf" target="_blank" rel="noopener">Foreign Exchange Market and Microstructural Approach to Exchange Rate Dynamics</a></h3>
         <div class="entry-year">slides</div>
@@ -546,35 +539,27 @@
         <p class="entry-meta"><a href="slides/niip-sustainability-cz.pdf" target="_blank" rel="noopener">Czech version</a></p>
       </article>
     </section>
-
   </main>
-
   <footer>
     <span>© <span id="year"></span> Martin Casta</span>
     <span>Prague · Czech National Bank · VŠE</span>
   </footer>
-
 </div>
-
 <script>
   // Current year in footer
   document.getElementById("year").textContent = new Date().getFullYear();
-
   // Scrollspy: highlight the nav link for the section currently in view
   (function () {
     var links = Array.prototype.slice.call(document.querySelectorAll(".nav a"));
     var map = {};
     links.forEach(function (a) { map[a.getAttribute("href").slice(1)] = a; });
-
     var sections = links
       .map(function (a) { return document.getElementById(a.getAttribute("href").slice(1)); })
       .filter(Boolean);
-
     function setActive(id) {
       links.forEach(function (a) { a.classList.remove("active"); });
       if (map[id]) map[id].classList.add("active");
     }
-
     if ("IntersectionObserver" in window) {
       var observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (e) {
